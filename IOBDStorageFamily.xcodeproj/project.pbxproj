@@ -23,6 +23,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1F0A3052238E179B0040FC95 /* BD-RE.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1F0A304F238E179B0040FC95 /* BD-RE.icns */; };
+		1F0A3053238E179B0040FC95 /* BD-R.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1F0A3050238E179B0040FC95 /* BD-R.icns */; };
+		1F0A3054238E179B0040FC95 /* BD.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1F0A3051238E179B0040FC95 /* BD.icns */; };
 		60BD236B0736E82C00AC1192 /* IOBDBlockStorageDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 0560FFD6008B977E11CA2AA4 /* IOBDBlockStorageDevice.h */; };
 		60BD236C0736E82C00AC1192 /* IOBDBlockStorageDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0560FFD8008B977E11CA2AA4 /* IOBDBlockStorageDriver.h */; };
 		60BD236D0736E82C00AC1192 /* IOBDMedia.h in Headers */ = {isa = PBXBuildFile; fileRef = 0560FFDA008B977E11CA2AA4 /* IOBDMedia.h */; };
@@ -95,6 +98,9 @@
 		12BF9C9800D8588E03CA2AA4 /* IOBDMediaBSDClient.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = IOBDMediaBSDClient.cpp; sourceTree = "<group>"; };
 		12BF9C9900D8588E03CA2AA4 /* IOBDMediaBSDClient.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = IOBDMediaBSDClient.h; sourceTree = "<group>"; };
 		1F0A304A238E13A20040FC95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F0A304F238E179B0040FC95 /* BD-RE.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "BD-RE.icns"; path = "IconResources/BD-RE.icns"; sourceTree = "<group>"; };
+		1F0A3050238E179B0040FC95 /* BD-R.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "BD-R.icns"; path = "IconResources/BD-R.icns"; sourceTree = "<group>"; };
+		1F0A3051238E179B0040FC95 /* BD.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = BD.icns; path = IconResources/BD.icns; sourceTree = "<group>"; };
 		6058858007382A7900193F37 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = /System/Library/Frameworks/Kernel.framework; sourceTree = "<absolute>"; };
 		60BD23800736E82C00AC1192 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60BD23810736E82C00AC1192 /* IOBDStorageFamily.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOBDStorageFamily.kext; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +122,9 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1F0A3050238E179B0040FC95 /* BD-R.icns */,
+				1F0A304F238E179B0040FC95 /* BD-RE.icns */,
+				1F0A3051238E179B0040FC95 /* BD.icns */,
 				72EC48C41F16D92F003DBB53 /* kext.xcconfig */,
 				60BD23800736E82C00AC1192 /* Info.plist */,
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
@@ -179,7 +188,6 @@
 			buildPhases = (
 				60BD236A0736E82C00AC1192 /* Headers */,
 				60BD23700736E82C00AC1192 /* Resources */,
-				60A599521517B6F800CB67C2 /* ShellScript */,
 				60BD23780736E82C00AC1192 /* Sources */,
 			);
 			buildRules = (
@@ -225,26 +233,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0A3054238E179B0040FC95 /* BD.icns in Resources */,
 				60BD23710736E82C00AC1192 /* InfoPlist.strings in Resources */,
+				1F0A3052238E179B0040FC95 /* BD-RE.icns in Resources */,
+				1F0A3053238E179B0040FC95 /* BD-R.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		60A599521517B6F800CB67C2 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/iconcompiler -i \"BD\" -r \"$PROJECT_DIR/IconResources\" -o \"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\" || exit 1\n/usr/local/bin/iconcompiler -i \"BD-R\" -r \"$PROJECT_DIR/IconResources\" -o \"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\" || exit 1\n/usr/local/bin/iconcompiler -i \"BD-RE\" -r \"$PROJECT_DIR/IconResources\" -o \"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\" || exit 1";
-		};
 		60FD67AD0D3FFAE0000D088D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
