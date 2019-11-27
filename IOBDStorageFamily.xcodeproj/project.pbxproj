@@ -105,10 +105,10 @@
 		089C166AFE841209C02AAC07 /* IOBDStorageFamily */ = {
 			isa = PBXGroup;
 			children = (
+				247142CAFF3F8F9811CA285C /* Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
 				6058858307382A7E00193F37 /* Frameworks */,
 				19C28FB6FE9D52B211CA2CBB /* Products */,
-				089C167CFE841241C02AAC07 /* Resources */,
-				247142CAFF3F8F9811CA285C /* Sources */,
 			);
 			name = IOBDStorageFamily;
 			sourceTree = "<group>";
