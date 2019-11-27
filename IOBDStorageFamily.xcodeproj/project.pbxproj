@@ -294,126 +294,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3032E1681A8D9E1000BC0F17 /* DebugCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
-			};
-			name = DebugCoverage;
-		};
-		3032E1691A8D9E1000BC0F17 /* DebugCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "-";
-				INFOPLIST_FILE = Info.plist;
-				OTHER_CFLAGS = (
-					"-fprofile-instr-generate",
-					"-fcoverage-mapping",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.iokit.IOBDStorageFamily;
-				PRODUCT_NAME = IOBDStorageFamily;
-				WARNING_CFLAGS = "-Wall";
-				WRAPPER_EXTENSION = kext;
-			};
-			name = DebugCoverage;
-		};
-		3032E16A1A8D9E1000BC0F17 /* DebugCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				INSTALLHDRS_COPY_PHASE = YES;
-				PRODUCT_NAME = "IOBDStorageFamily Headers";
-			};
-			name = DebugCoverage;
-		};
-		3032E16B1A8D9E1B00BC0F17 /* ReleaseCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-			};
-			name = ReleaseCoverage;
-		};
-		3032E16C1A8D9E1B00BC0F17 /* ReleaseCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "-";
-				INFOPLIST_FILE = Info.plist;
-				OTHER_CFLAGS = (
-					"-fprofile-instr-generate",
-					"-fcoverage-mapping",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.iokit.IOBDStorageFamily;
-				PRODUCT_NAME = IOBDStorageFamily;
-				WARNING_CFLAGS = "-Wall";
-				WRAPPER_EXTENSION = kext;
-			};
-			name = ReleaseCoverage;
-		};
-		3032E16D1A8D9E1B00BC0F17 /* ReleaseCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				INSTALLHDRS_COPY_PHASE = YES;
-				PRODUCT_NAME = "IOBDStorageFamily Headers";
-			};
-			name = ReleaseCoverage;
-		};
 		60218F94095B74720026C3D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72EC48C41F16D92F003DBB53 /* kext.xcconfig */;
@@ -531,9 +411,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60218F94095B74720026C3D8 /* Debug */,
-				3032E1691A8D9E1000BC0F17 /* DebugCoverage */,
 				60218F95095B74720026C3D8 /* Release */,
-				3032E16C1A8D9E1B00BC0F17 /* ReleaseCoverage */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -542,9 +420,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60218F98095B74720026C3D8 /* Debug */,
-				3032E1681A8D9E1000BC0F17 /* DebugCoverage */,
 				60218F99095B74720026C3D8 /* Release */,
-				3032E16B1A8D9E1B00BC0F17 /* ReleaseCoverage */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -553,9 +429,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60FD67900D3FF41A000D088D /* Debug */,
-				3032E16A1A8D9E1000BC0F17 /* DebugCoverage */,
 				60FD67910D3FF41A000D088D /* Release */,
-				3032E16D1A8D9E1B00BC0F17 /* ReleaseCoverage */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
