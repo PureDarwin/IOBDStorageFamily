@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -200,9 +200,10 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "PureDarwin Project";
 			};
 			buildConfigurationList = 60218F97095B74720026C3D8 /* Build configuration list for PBXProject "IOBDStorageFamily" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
