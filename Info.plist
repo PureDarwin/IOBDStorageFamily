@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>IOBDStorageFamily</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.iokit.IOBDStorageFamily</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -56,9 +56,9 @@
 	<string>1.5</string>
 	<key>OSBundleLibraries</key>
 	<dict>
-		<key>com.apple.iokit.IODVDStorageFamily</key>
-		<string>1.7</string>
 		<key>com.apple.iokit.IOCDStorageFamily</key>
+		<string>1.7</string>
+		<key>com.apple.iokit.IODVDStorageFamily</key>
 		<string>1.7</string>
 		<key>com.apple.iokit.IOStorageFamily</key>
 		<string>1.7</string>
