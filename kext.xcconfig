@@ -1,4 +1,6 @@
-BUILD_VARIANTS[sdk=macosx*] = normal kasan
-BUILD_VARIANTS[sdk=iphoneos*] = normal kasan
-CODE_SIGN_IDENTITY = -
-OTHER_CFLAGS_kasan = $(KASAN_DEFAULT_CFLAGS)
+#include "darwinbuild.xcconfig"
+
+HEADER_SEARCH_PATHS = $(DEPROOT)/System/Library/Frameworks/Kernel.framework/PrivateHeaders $(DEPROOT)/System/Library/Frameworks/Kernel.framework/Headers
+SYSTEM_HEADER_SEARCH_PATHS = // nothing, this is a kernel component
+FRAMEWORK_SEARCH_PATHS = // nothing, this is a kernel component
+LIBRARY_SEARCH_PATHS = // nothing, this is a kernel component
