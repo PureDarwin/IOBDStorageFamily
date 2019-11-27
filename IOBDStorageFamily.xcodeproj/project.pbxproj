@@ -298,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72EC48C41F16D92F003DBB53 /* kext.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.iokit.IOBDStorageFamily;
@@ -311,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72EC48C41F16D92F003DBB53 /* kext.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.iokit.IOBDStorageFamily;
